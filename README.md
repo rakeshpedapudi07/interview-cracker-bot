@@ -1,34 +1,40 @@
 # Interview Cracker Bot
 
-This project is an AI-powered interview simulation platform built with React and Vite. It helps users practice technical interviews by generating questions, evaluating answers, and providing feedback in real time.
+This project is a React + Vite based AI interview simulator that helps users practice technical interviews with real-time evaluation and feedback.
+
+---
+
+## What it does
+
+* Simulates a technical interview experience
+* Asks dynamic questions based on a topic
+* Evaluates answers (Strong / Average / Weak)
+* Provides short feedback after each response
+* Moves to the next question automatically
 
 ---
 
 ## Features
 
-* AI-based interview question generation
-* Real-time answer evaluation
-* Adaptive question flow
+* AI-powered question generation
+* Structured evaluation system
 * Hint and solution support
-* Session tracking and summary
+* Timer for each question
+* Session summary at the end
 
 ---
 
-## Tech Stack
+## Getting Started
 
-* React (Vite)
-* JavaScript
-* CSS
-* OpenRouter API
-
----
-
-## Running the Project
-
-To run this project locally:
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Run the development server:
+
+```bash
 npm run dev
 ```
 
@@ -46,14 +52,31 @@ VITE_OPENROUTER_KEY=your_api_key_here
 
 ## Notes
 
-* Make sure to add your API key before running the app
-* Do not expose your `.env` file publicly
-* For production use, consider moving API calls to a backend
+* Make sure your API key is valid
+* Do not commit `.env` to GitHub
+* For production, set environment variables in Vercel
+
+---
+
+## Tech Stack
+
+* React (Vite)
+* JavaScript
+* CSS
+* OpenRouter API
+
+---
+
+## Deployment
+
+The app is deployed on Vercel:
+
+https://interview-cracker-ks6qc4vjv-rakeshpedapudi07-9820s-projects.vercel.app/
 
 ---
 
 ## Future Improvements
 
-* Backend integration
-* Better UI/UX enhancements
-* Advanced analytics for interview performance
+* Backend integration for secure API usage
+* Improved UI/UX
+* Advanced analytics and tracking
