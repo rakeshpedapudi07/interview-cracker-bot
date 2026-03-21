@@ -1,16 +1,59 @@
-# React + Vite
+# Interview Cracker Bot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an AI-powered interview simulation platform built with React and Vite. It helps users practice technical interviews by generating questions, evaluating answers, and providing feedback in real time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* AI-based interview question generation
+* Real-time answer evaluation
+* Adaptive question flow
+* Hint and solution support
+* Session tracking and summary
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React (Vite)
+* JavaScript
+* CSS
+* OpenRouter API
+
+---
+
+## Running the Project
+
+To run this project locally:
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file in the root directory:
+
+```bash
+VITE_OPENROUTER_KEY=your_api_key_here
+```
+
+---
+
+## Notes
+
+* Make sure to add your API key before running the app
+* Do not expose your `.env` file publicly
+* For production use, consider moving API calls to a backend
+
+---
+
+## Future Improvements
+
+* Backend integration
+* Better UI/UX enhancements
+* Advanced analytics for interview performance
