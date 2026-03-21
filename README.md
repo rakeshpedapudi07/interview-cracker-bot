@@ -1,38 +1,161 @@
-# Interview Cracker Bot
+#  Interview Cracker Bot
 
-This project is a React + Vite based AI interview simulator that helps users practice technical interviews with real-time evaluation and feedback.
-
----
-
-## What it does
-
-* Simulates a technical interview experience
-* Asks dynamic questions based on a topic
-* Evaluates answers (Strong / Average / Weak)
-* Provides short feedback after each response
-* Moves to the next question automatically
+AI-powered real-time technical interview simulator built with React and Vite.
+This platform mimics a real interviewer by asking questions, evaluating responses, and adapting dynamically based on user performance.
 
 ---
 
-## Features
+## 🔍 Project Overview
 
-* AI-powered question generation
-* Structured evaluation system
-* Hint and solution support
-* Timer for each question
-* Session summary at the end
+Interview Cracker Bot is designed to simulate a **real-world technical interview experience**.
+It generates domain-specific questions, evaluates answers using structured grading, and provides feedback to help users improve.
+
+The system behaves like a **strict but fair senior interviewer**, guiding users through multiple questions in a session.
 
 ---
 
-## Getting Started
+##  Technologies Used
 
-Install dependencies:
+* React (Vite) ⚛️
+* JavaScript 🟨
+* CSS 🎨
+* OpenRouter API 🤖
+* Vercel ☁️
 
-```bash
+---
+
+## 🧩 Core Features
+
+* 🎯 Dynamic interview question generation
+* 📊 Real-time evaluation (Strong / Average / Weak)
+* 💬 Instant feedback after each response
+* 🔁 Adaptive question flow
+* 💡 Hint system (limited guided hints)
+* 🔓 Solution reveal option
+* ⏱️ Question timer
+* 📈 Session summary with performance insights
+
+---
+
+## ⚙️ System Flow
+
+```
+┌────────────────────┐
+│   User selects     │
+│   interview topic  │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│  AI generates      │
+│  question          │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│  User submits      │
+│  answer            │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│  AI evaluates      │
+│  response          │
+│ (Strong/Avg/Weak)  │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│  Feedback +        │
+│  improvement hint  │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│ Next Question OR   │
+│ Retry current      │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│ Session Summary    │
+│ & Performance      │
+└────────────────────┘
+```
+
+---
+
+## 📁 Project Structure
+
+```
+interview-cracker-bot/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── ChatScreen.jsx
+│   │   ├── MessageBubble.jsx
+│   │   ├── TypingIndicator.jsx
+│   │   ├── QuestionTimer.jsx
+│   │   ├── ProgressBar.jsx
+│   │   ├── SessionSummary.jsx
+│   │   └── SolutionConfirmModal.jsx
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── vite.config.js
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 🚀 System Workflow
+
+### 1️⃣ Start Session
+
+User selects a topic and begins the interview
+
+### 2️⃣ Question Generation
+
+AI generates one question at a time based on the topic
+
+### 3️⃣ Answer Submission
+
+User submits their response
+
+### 4️⃣ Evaluation
+
+AI evaluates the answer:
+```
+* Strong
+* Average
+* Weak
+```
+### 5️⃣ Adaptive Flow
+
+* Strong → Move to next question
+* Weak → Ask follow-up or hint
+
+### 6️⃣ Session Completion
+
+Final summary with performance insights
+
+---
+
+## ▶️ How to Run
+
+### Install dependencies
+bash
+``` 
 npm install
 ```
 
-Run the development server:
+### Run locally
 
 ```bash
 npm run dev
@@ -40,7 +163,7 @@ npm run dev
 
 ---
 
-## Environment Variables
+## 🔐 Environment Setup
 
 Create a `.env` file in the root directory:
 
@@ -48,35 +171,45 @@ Create a `.env` file in the root directory:
 VITE_OPENROUTER_KEY=your_api_key_here
 ```
 
----
-
-## Notes
-
-* Make sure your API key is valid
-* Do not commit `.env` to GitHub
-* For production, set environment variables in Vercel
+⚠️ Do not commit `.env` to GitHub
 
 ---
 
-## Tech Stack
+## 🌐 Deployment
 
-* React (Vite)
-* JavaScript
-* CSS
-* OpenRouter API
-
----
-
-## Deployment
-
-The app is deployed on Vercel:
-
+The project is deployed on Vercel:
+```
 https://interview-cracker-ks6qc4vjv-rakeshpedapudi07-9820s-projects.vercel.app/
+```
+---
+
+## ⚠️ Notes
+
+* API key must be configured properly
+* Ensure environment variables are set in Vercel
+* Frontend API usage is not fully secure for production
 
 ---
 
-## Future Improvements
+## 🔮 Future Enhancements
 
-* Backend integration for secure API usage
-* Improved UI/UX
-* Advanced analytics and tracking
+* Backend integration for secure API handling
+* Advanced analytics dashboard
+* Company-specific interview modes (Amazon, Google)
+* Personalized learning recommendations
+* Voice-based interview simulation
+
+---
+
+## 👨‍💻 Author
+
+Rakesh Pedapudi
+
+B.Tech (Artificial Intelligence)
+Focused on Software Engineering, AI Systems, and Full Stack Development
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
