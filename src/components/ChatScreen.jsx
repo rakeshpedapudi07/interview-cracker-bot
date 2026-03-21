@@ -6,7 +6,7 @@ import ProgressBar from "./ProgressBar";
 import SolutionConfirmModal from "./SolutionConfirmModal";
 import SessionSummary from "./SessionSummary";
 
-const OPENROUTER_KEY = "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"; 
+const OPENROUTER_KEY = "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"; 
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
 const SYSTEM_PROMPT = (topic, qNum, total) =>
   `You are a strict but fair senior engineer conducting a live ${topic} technical interview.
