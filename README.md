@@ -179,7 +179,7 @@ VITE_OPENROUTER_KEY=your_api_key_here
 
 The project is deployed on Vercel:
 ```
-https://interview-cracker-ks6qc4vjv-rakeshpedapudi07-9820s-projects.vercel.app/
+https://interview-cracker-bot.vercel.app/
 ```
 ---
 
