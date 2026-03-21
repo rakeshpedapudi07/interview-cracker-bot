@@ -6,7 +6,7 @@ import ProgressBar from "./ProgressBar";
 import SolutionConfirmModal from "./SolutionConfirmModal";
 import SessionSummary from "./SessionSummary";
 
-const OPENROUTER_KEY = "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"; 
+const OPENROUTER_KEY = import.meta.env.VITE_OPENROUTER_KEY;
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
 const SYSTEM_PROMPT = (topic, qNum, total) =>
   `You are a strict but fair senior engineer conducting a live ${topic} technical interview.
@@ -58,7 +58,7 @@ async function callAPI(systemPrompt, messages) {
     headers: {
       "Content-Type": "application/json",
       "Authorization": `Bearer ${OPENROUTER_KEY}`,
-      "HTTP-Referer": "http://localhost:5173",
+      "HTTP-Referer": "https://interview-cracker-bot.vercel.app",
       "X-Title": "Interview Cracker Bot",
     },
     body: JSON.stringify({
