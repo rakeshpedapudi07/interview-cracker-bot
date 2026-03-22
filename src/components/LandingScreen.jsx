@@ -69,7 +69,7 @@ export default function LandingScreen({ onStart }) {
       <main className="landing-main">
         <div className="eyebrow land-anim land-anim-1">
           <span className="eyebrow-line" />
-          AI INTERVIEW SIMULATOR · POWERED BY CLAUDE
+          AI INTERVIEW SIMULATOR 
           <span className="eyebrow-line" />
         </div>
 
