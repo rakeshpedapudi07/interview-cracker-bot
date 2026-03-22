@@ -1,87 +1,91 @@
-#  Interview Cracker Bot
+##  PrepForge v3.0 — AI Interview Simulator
 
-AI-powered real-time technical interview simulator built with React and Vite.
-This platform mimics a real interviewer by asking questions, evaluating responses, and adapting dynamically based on user performance.
+**Stop Practicing. Start Performing.**
 
----
-
-##  Project Overview
-
-Interview Cracker Bot is designed to simulate a **real-world technical interview experience**.
-It generates domain-specific questions, evaluates answers using structured grading, and provides feedback to help users improve.
-
-The system behaves like a **strict but fair senior interviewer**, guiding users through multiple questions in a session.
+PrepForge is an AI-powered interview simulator designed to replicate real technical interview pressure. It evaluates your answers, adapts dynamically to your performance, and helps you improve through structured feedback.
 
 ---
 
-##  Technologies Used
+##  Overview
 
-* React (Vite) 
-* JavaScript 
-* CSS 
-* OpenRouter API 
-* Vercel 
+PrepForge is not just a chatbot — it behaves like a **strict, real-world interviewer**.
 
----
+It generates domain-specific questions, evaluates responses (Strong / Average / Weak), and adapts the flow based on your performance.
 
-##  Core Features
-
-*  Dynamic interview question generation
-*  Real-time evaluation (Strong / Average / Weak)
-*  Instant feedback after each response
-*  Adaptive question flow
-*  Hint system (limited guided hints)
-*  Solution reveal option
-*  Question timer
-*  Session summary with performance insights
+The goal: **Expose weak reasoning, enforce clarity, and build real interview confidence.**
 
 ---
 
-## ⚙️ System Flow
+## Core Features
 
-```
-┌────────────────────┐
-│   User selects     │
-│   interview topic  │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│  AI generates      │
-│  question          │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│  User submits      │
-│  answer            │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│  AI evaluates      │
-│  response          │
-│ (Strong/Avg/Weak)  │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│  Feedback +        │
-│  improvement hint  │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│ Next Question OR   │
-│ Retry current      │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│ Session Summary    │
-│ & Performance      │
-└────────────────────┘
-```
+- 🎯 **Dynamic Question Generation**  
+  AI generates questions in real-time based on selected domain.
+
+-  **Adaptive Interview Flow**  
+  - Strong → Move forward  
+  - Average → Mild probing  
+  - Weak → Deep follow-up / hints  
+
+- **Live Evaluation System**  
+  Each response is graded:
+  - Strong  
+  - Average  
+  - Weak  
+
+-  **Instant Feedback**  
+  Honest, direct feedback after every answer.
+
+-  **Question Timer**  
+  Simulates real interview time pressure.
+
+-  **Hint System**  
+  Guided nudges without revealing full solutions.
+
+-  **Session Summary**  
+  Performance breakdown after completing the interview.
+
+---
+
+##  Supported Domains
+
+- **Data Structures & Algorithms**  
+  Arrays, Trees, Graphs, Dynamic Programming, Complexity
+
+- **System Design**  
+  Scalability, Databases, Distributed Systems
+
+- **Behavioral / HR**  
+  STAR method, Leadership, Communication
+
+---
+
+##  How It Works
+
+```text
+User selects domain
+        ↓
+AI generates question
+        ↓
+User submits answer
+        ↓
+AI evaluates (Strong / Average / Weak)
+        ↓
+Feedback + Hint (if needed)
+        ↓
+Next question or retry
+        ↓
+Session summary
+````
+
+---
+
+##  Tech Stack
+
+* **Frontend:** React (Vite)
+* **Language:** JavaScript
+* **Styling:** CSS
+* **AI API:** OpenRouter
+* **Deployment:** Vercel
 
 ---
 
@@ -108,54 +112,37 @@ interview-cracker-bot/
 ├── index.html
 ├── package.json
 ├── vite.config.js
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
 ---
 
-##  System Workflow
+##  Getting Started
 
-### 1️ Start Session
+### 1. Clone the Repository
 
-User selects a topic and begins the interview
-
-### 2️ Question Generation
-
-AI generates one question at a time based on the topic
-
-### 3️ Answer Submission
-
-User submits their response
-
-### 4️ Evaluation
-
-AI evaluates the answer:
+```bash
+git clone https://github.com/your-username/interview-cracker-bot.git
+cd interview-cracker-bot
 ```
-* Strong
-* Average
-* Weak
-```
-### 5️ Adaptive Flow
 
-* Strong → Move to next question
-* Weak → Ask follow-up or hint
+### 2. Install Dependencies
 
-### 6️ Session Completion
-
-Final summary with performance insights
-
----
-
-##  How to Run
-
-### Install dependencies
-bash
-``` 
+```bash
 npm install
 ```
 
-### Run locally
+### 3. Setup Environment Variables
+
+Create a `.env` file in the root directory:
+
+```
+VITE_OPENROUTER_KEY=your_api_key_here
+```
+
+> ⚠️ Do NOT commit your `.env` file.
+
+### 4. Run the Project
 
 ```bash
 npm run dev
@@ -163,44 +150,34 @@ npm run dev
 
 ---
 
-##  Environment Setup
-
-Create a `.env` file in the root directory:
-
-```bash
-VITE_OPENROUTER_KEY=your_api_key_here
+## 🌐 Live Demo
 ```
-
-⚠️ Do not commit `.env` to GitHub
-
----
-
-## 🌐 Deployment
-
-The project is deployed on Vercel:
-```
-https://interview-cracker-bot.vercel.app/
+ https://interview-cracker-bot.vercel.app/
 ```
 ---
 
-##  Notes
+## 🧭 Roadmap / Future Improvements
 
-* API key must be configured properly
-* Ensure environment variables are set in Vercel
-* Frontend API usage is not fully secure for production
+*  Backend integration for secure API handling
+*  Advanced analytics dashboard
+*  Personalized learning recommendations
+*  Voice-based interview mode
+*  Live coding editor with test cases
 
 ---
 
-##  Future Enhancements
+##  Philosophy
 
-* Backend integration for secure API handling
-* Advanced analytics dashboard
-* Personalized learning recommendations
+> **Think · Code · Explain · Iterate · Improve**
+
+PrepForge is built on one idea:
+You don’t get better by reading solutions — you get better by struggling through them.
+
 ---
 
 ##  Author
 
-Rakesh Pedapudi
+**Rakesh Pedapudi**
 B.Tech (Artificial Intelligence)
 Focused on Software Engineering, AI Systems, and Full Stack Development
 
@@ -208,4 +185,6 @@ Focused on Software Engineering, AI Systems, and Full Stack Development
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
+
+---
