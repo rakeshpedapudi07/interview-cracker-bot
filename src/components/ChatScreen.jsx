@@ -8,7 +8,7 @@ import SessionSummary from "./SessionSummary";
 import VoiceInput from "./VoiceInput";
 import CodeEditor from "./CodeEditor";
 
-const OPENROUTER_KEY = "PASTE_YOUR_KEY_HERE";
+const OPENROUTER_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 const COMPANY_PERSONAS = {
