@@ -5,7 +5,7 @@ This platform mimics a real interviewer by asking questions, evaluating response
 
 ---
 
-## 🔍 Project Overview
+##  Project Overview
 
 Interview Cracker Bot is designed to simulate a **real-world technical interview experience**.
 It generates domain-specific questions, evaluates answers using structured grading, and provides feedback to help users improve.
@@ -16,24 +16,24 @@ The system behaves like a **strict but fair senior interviewer**, guiding users 
 
 ##  Technologies Used
 
-* React (Vite) ⚛️
-* JavaScript 🟨
-* CSS 🎨
-* OpenRouter API 🤖
-* Vercel ☁️
+* React (Vite) 
+* JavaScript 
+* CSS 
+* OpenRouter API 
+* Vercel 
 
 ---
 
-## 🧩 Core Features
+##  Core Features
 
-* 🎯 Dynamic interview question generation
-* 📊 Real-time evaluation (Strong / Average / Weak)
-* 💬 Instant feedback after each response
-* 🔁 Adaptive question flow
-* 💡 Hint system (limited guided hints)
-* 🔓 Solution reveal option
-* ⏱️ Question timer
-* 📈 Session summary with performance insights
+*  Dynamic interview question generation
+*  Real-time evaluation (Strong / Average / Weak)
+*  Instant feedback after each response
+*  Adaptive question flow
+*  Hint system (limited guided hints)
+*  Solution reveal option
+*  Question timer
+*  Session summary with performance insights
 
 ---
 
@@ -85,7 +85,7 @@ The system behaves like a **strict but fair senior interviewer**, guiding users 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 interview-cracker-bot/
@@ -114,21 +114,21 @@ interview-cracker-bot/
 
 ---
 
-## 🚀 System Workflow
+##  System Workflow
 
-### 1️⃣ Start Session
+### 1️ Start Session
 
 User selects a topic and begins the interview
 
-### 2️⃣ Question Generation
+### 2️ Question Generation
 
 AI generates one question at a time based on the topic
 
-### 3️⃣ Answer Submission
+### 3️ Answer Submission
 
 User submits their response
 
-### 4️⃣ Evaluation
+### 4️ Evaluation
 
 AI evaluates the answer:
 ```
@@ -136,18 +136,18 @@ AI evaluates the answer:
 * Average
 * Weak
 ```
-### 5️⃣ Adaptive Flow
+### 5️ Adaptive Flow
 
 * Strong → Move to next question
 * Weak → Ask follow-up or hint
 
-### 6️⃣ Session Completion
+### 6️ Session Completion
 
 Final summary with performance insights
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ### Install dependencies
 bash
@@ -163,7 +163,7 @@ npm run dev
 
 ---
 
-## 🔐 Environment Setup
+##  Environment Setup
 
 Create a `.env` file in the root directory:
 
@@ -183,7 +183,7 @@ https://interview-cracker-bot.vercel.app/
 ```
 ---
 
-## ⚠️ Notes
+##  Notes
 
 * API key must be configured properly
 * Ensure environment variables are set in Vercel
@@ -191,20 +191,16 @@ https://interview-cracker-bot.vercel.app/
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * Backend integration for secure API handling
 * Advanced analytics dashboard
-* Company-specific interview modes (Amazon, Google)
 * Personalized learning recommendations
-* Voice-based interview simulation
-
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Rakesh Pedapudi
-
 B.Tech (Artificial Intelligence)
 Focused on Software Engineering, AI Systems, and Full Stack Development
 
