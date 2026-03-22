@@ -9,12 +9,16 @@ export default function App() {
     <div className="app-root">
       {!session ? (
         <LandingScreen
-          onStart={(topic, totalQuestions) => setSession({ topic, totalQuestions })}
+          onStart={(topic, totalQuestions, company, mode) =>
+            setSession({ topic, totalQuestions, company, mode })
+          }
         />
       ) : (
         <ChatScreen
           topic={session.topic}
           totalQuestions={session.totalQuestions}
+          company={session.company}
+          mode={session.mode}
           onExit={() => setSession(null)}
         />
       )}
