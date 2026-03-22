@@ -18,7 +18,7 @@ The goal: **Expose weak reasoning, enforce clarity, and build real interview con
 
 ## Core Features
 
-- 🎯 **Dynamic Question Generation**  
+-  **Dynamic Question Generation**  
   AI generates questions in real-time based on selected domain.
 
 -  **Adaptive Interview Flow**  
@@ -122,7 +122,7 @@ interview-cracker-bot/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/interview-cracker-bot.git
+git clone https://github.com/rakeshpedapudi07/interview-cracker-bot.git
 cd interview-cracker-bot
 ```
 
@@ -156,7 +156,7 @@ npm run dev
 ```
 ---
 
-## 🧭 Roadmap / Future Improvements
+##  Roadmap / Future Improvements
 
 *  Backend integration for secure API handling
 *  Advanced analytics dashboard
@@ -183,7 +183,7 @@ Focused on Software Engineering, AI Systems, and Full Stack Development
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License**.
 
