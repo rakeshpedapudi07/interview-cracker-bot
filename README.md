@@ -85,32 +85,32 @@ flowchart TD
 
 ---
 
-##  Project Structure
+## Project Structure (Visual)
 
-```
-interview-cracker-bot/
-│
-├── public/
-│
-├── src/
-│   ├── components/
-│   │   ├── ChatScreen.jsx
-│   │   ├── MessageBubble.jsx
-│   │   ├── TypingIndicator.jsx
-│   │   ├── QuestionTimer.jsx
-│   │   ├── ProgressBar.jsx
-│   │   ├── SessionSummary.jsx
-│   │   └── SolutionConfirmModal.jsx
-│   │
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
+```mermaid
+graph TD
+    A[interview-cracker-bot]
 
+    A --> B[public]
+
+    A --> C[src]
+    C --> D[components]
+    D --> D1[ChatScreen.jsx]
+    D --> D2[MessageBubble.jsx]
+    D --> D3[TypingIndicator.jsx]
+    D --> D4[QuestionTimer.jsx]
+    D --> D5[ProgressBar.jsx]
+    D --> D6[SessionSummary.jsx]
+    D --> D7[SolutionConfirmModal.jsx]
+
+    C --> E[App.jsx]
+    C --> F[main.jsx]
+
+    A --> G[index.html]
+    A --> H[package.json]
+    A --> I[vite.config.js]
+    A --> J[README.md]
+```
 ---
 
 ##  Getting Started
