@@ -59,23 +59,19 @@ The goal: **Expose weak reasoning, enforce clarity, and build real interview con
 
 ---
 
-##  How It Works
+## How It Works
 
-```text
-User selects domain
-        ↓
-AI generates question
-        ↓
-User submits answer
-        ↓
-AI evaluates (Strong / Average / Weak)
-        ↓
-Feedback + Hint (if needed)
-        ↓
-Next question or retry
-        ↓
-Session summary
-````
+```mermaid
+flowchart TD
+    A[User selects domain] --> B[AI generates question]
+    B --> C[User submits answer]
+    C --> D{Evaluation}
+    D -->|Strong| E[Next question]
+    D -->|Average| F[Feedback + Hint]
+    D -->|Weak| F
+    F --> C
+    E --> G[Session summary]
+```
 
 ---
 
