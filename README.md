@@ -8,7 +8,7 @@ It dynamically evaluates responses, adapts questioning strategy, and provides st
 ---
   
 ## Overview
-
+   
 PrepForge is not just a chatbot — it behaves like a **strict, real-world interviewer**.
 
 The system generates domain-specific questions, evaluates responses (Strong / Average / Weak), and adapts the interview flow in real time.
