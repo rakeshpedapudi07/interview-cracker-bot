@@ -6,7 +6,7 @@ PrepForge is an AI-powered interview simulator that replicates real technical in
 It dynamically evaluates responses, adapts questioning strategy, and provides structured feedback to improve reasoning and communication skills.
   
 ---
-
+  
 ## Overview
 
 PrepForge is not just a chatbot — it behaves like a **strict, real-world interviewer**.
