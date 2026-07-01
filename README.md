@@ -23,7 +23,7 @@ The goal is simple:
 - **Dynamic Question Generation**  
   AI generates contextual questions based on selected domain  
 
-- **Adaptive Interview Flow**  
+- **Adaptive Interview Flow**     
   - Strong → Progress to next question  
   - Average → Follow-up probing  
   - Weak → Guided hints + retry  
